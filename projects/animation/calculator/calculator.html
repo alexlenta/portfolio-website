@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator Alexandru Lenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form name="calculator">
+            <input id="cButton" type="reset" value="C">
+            <input class="answer" type="textfield" name="ans" value="">
+
+            <input class="numbers" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+            <input class="numbers" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+            <input class="numbers" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+            <input class="sideButtons" class="sideButtons" type="button" value="+" onClick="document.calculator.ans.value+='+'">
+
+            <input class="numbers" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+            <input class="numbers" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+            <input class="numbers" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+            <input class="sideButtons" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+
+            <input class="numbers" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+            <input class="numbers" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+            <input class="numbers" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+            <input class="sideButtons" type="button" value="x" onClick="document.calculator.ans.value+='*'">
+
+            <input class="numbers" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+            <input class="numbers" type="button" value="." onClick="document.calculator.ans.value+='.'">
+            <input class="equal" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+            <input class="sideButtons" type="button" value=":" onClick="document.calculator.ans.value+='/'">
+        </form>
+    </div>
+</body>
+</html>

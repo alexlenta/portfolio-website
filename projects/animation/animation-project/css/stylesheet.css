@@ -1,0 +1,582 @@
+#animationFrame {
+  height:500px;
+  width:1000px;
+  position:absolute;
+  z-index: -20;
+}
+
+#candleLit {
+  height:100px;
+  width:100px;
+  position:absolute;
+    background-image: url('../assets/gif animation/candlelit.gif');
+    background-size:100px 100px;
+    left: 228px;
+    top: 195px;
+    z-index: 11;
+    visibility: hidden;
+}
+
+#candleBlown {
+  height:100px;
+  width:100px;
+  position:absolute;
+    background-image: url('../assets/gif animation/candleblown.gif');
+    background-size:100px 100px;
+    left: 228px;
+    top: 195px;
+    z-index: 11;
+    visibility: hidden;
+}
+
+#playButton {
+  height:500px;
+  width:1000px;
+  position:absolute;
+  background-image: url('../assets/playbutton.png');
+  z-index: 50;
+}
+
+#wall {
+  position:absolute;
+  z-index: 0;
+  height:500px;
+  width:1000px;
+  background-image: url('../assets/wall2.png');
+  background-size:1000px 500px;
+}
+
+#title {
+  height:500px;
+  width:1000px;
+  background-image: url('../assets/title.png');
+  background-size:1000px 500px;
+  color:White;
+  position:absolute;
+  z-index: 10;
+  visibility: hidden;
+}
+
+#ppl {
+  visibility: hidden;
+  position:absolute;
+  z-index: 10;
+  height:500px;
+  width:1000px;
+  background-image: url('../assets/ppl2.png');
+  background-size:1000px 500px;
+}
+
+.showPpl {
+  animation: showPpl 2s linear forwards;
+}
+
+@keyframes showPpl {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.titleLoad {
+
+  animation: titleload 7s;
+}
+
+@keyframes titleload {
+  0%
+  {
+    visibility: visible;
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#door {
+  position: absolute;
+    top: 217px;
+    left: 325px;
+    width: calc(2098px / 7);
+    height:300px;
+    z-index: 5;
+    background-image: url('../assets/doorspritesheet.png');
+
+
+}
+
+#doorHandle {
+  height:20px;
+  width:20px;
+  top: 160px;
+  left:127px;
+  position:absolute;
+  height:45px;
+  width:45px;
+  background-size:45px 45px;
+  z-index: 10px;
+  background-image: url('../assets/doorhandle.png');
+}
+
+.doorOpen {
+  animation: doorOpen 1.5s steps(7);
+}
+@keyframes doorOpen
+{
+
+  100%{
+
+    background-position: -2098px;
+  }
+}
+
+/* @keyframes doorOpen {
+  0%
+  {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+} */
+
+.frame2 {
+  animation: frame2change 0s linear forwards;
+}
+
+@keyframes frame2change {
+
+  100% {
+    background-image: url('../assets/backgroundnew.png');
+    background-size:1000px 500px;
+    height:500px;
+    width:1000px;
+  }
+}
+
+#arrowHat {
+  background-image: url('../assets/arrow.png');
+  height:75px;
+  width:75px;
+  background-size:75px 75px;
+  position: absolute;
+  left: 40px;
+  top: -62px;
+  animation: updown 2s infinite;
+  display:none;
+
+}
+
+#arrowSnape {
+  background-image: url('../assets/arrow.png');
+  height:75px;
+  width:75px;
+  background-size:75px 75px;
+  position: absolute;
+  left: 120px;
+  top: -100px;
+  animation: updown 2s infinite;
+  display:none;
+
+}
+
+#arrowDumbledore {
+  background-image: url('../assets/arrow.png');
+  height:75px;
+  width:75px;
+  background-size:75px 75px;
+  position: absolute;
+  left: 95px;
+  top: 10px;
+  animation: updown 2s infinite;
+  display:none;
+
+}
+
+#arrowCandle {
+  background-image: url('../assets/arrow.png');
+  height:45px;
+  width:45px;
+  background-size:45px 45px;
+  position: absolute;
+  left: 255px;
+  top: 135px;
+  animation: updown 2s infinite;
+  display:none;
+
+
+
+}
+
+@keyframes updown {
+   0% {
+     transform: translate(0px, 0px)
+   }
+  50% {
+    visibility: visible;
+    transform: translate(0px, 30px)
+  }
+  100% {
+    transform: translate(0px, 0px)
+  }
+}
+
+
+
+#harry {
+  visibility: hidden;
+  top: 175px;
+  left:460px;
+  position:absolute;
+  z-index: 4;
+  background-image: url('../assets/harry1.png');
+  height:350px;
+  width:300px;
+}
+
+#hat {
+  visibility: hidden;
+  left:534px;
+  top: 63px;
+  position:absolute;
+  z-index: 10;
+  background-image: url('../assets/hatnew.png');
+  height:150px;
+  width:150px;
+  background-size:150px 150px;
+
+}
+
+#professor {
+  visibility: hidden;
+  top: 20px;
+  left:300px;
+  position:absolute;
+  z-index: 3;
+  background-image: url('../assets/professor.png');
+  height:417px;
+  width:350px;
+  background-size:350px 417px;
+}
+
+#dumbledore {
+  visibility: hidden;
+  top: 14px;
+  left:680px;
+  position:absolute;
+  z-index: 20;
+  background-image: url('../assets/dumbledore.png');
+  height:320px;
+  width:302px;
+  background-size:302px 320px;
+}
+
+#snape {
+  visibility: hidden;
+  top: 117px;
+  left:12px;
+  position:absolute;
+  z-index: 20;
+  background-image: url('../assets/snape.png');
+  height:188px;
+  width:250px;
+  background-size:250px 188px;
+}
+
+#candle {
+
+}
+
+.showHat {
+  animation: showHat 2s linear forwards;
+}
+
+@keyframes showHat {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.showHarry {
+  animation: showHarry 2s linear forwards;
+}
+
+@keyframes showHarry {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.showProfessor {
+  animation: showProfessor 2s linear forwards;
+}
+
+@keyframes showProfessor {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.showDumbledore {
+  animation: showDumbledore 2s linear forwards;
+}
+@keyframes showDumbledore {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.showSnape {
+  animation: showSnape 2s linear forwards;
+}
+@keyframes showSnape {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+.putHatOnHead {
+  animation: putHatOnHead 0.5s linear forwards;
+}
+
+@keyframes putHatOnHead {
+
+  to {
+      visibility: visible;
+     transform: translate(0px, 30px);
+  }
+}
+
+.rotateProfessor {
+  animation: rotateProfessor 2s forwards;
+}
+
+@keyframes rotateProfessor {
+
+  50% {
+      visibility: visible;
+     transform: rotate(12deg);
+  }
+
+  100% {
+    visibility: visible;
+   transform: rotate(0deg);
+  }
+}
+
+.hide {
+  animation: hideThing 0s forwards;
+}
+
+@keyframes hideThing {
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+.show {
+  animation: showThing 0s forwards;
+}
+
+@keyframes showThing {
+
+  100% {
+    visibility: visible;
+  }
+}
+
+#harryScene {
+  position:absolute;
+  z-index: 0;
+  height:500px;
+  width:1000px;
+  background-image: url('../assets/harrylol.png');
+  background-size:1000px 500px;
+  visibility: hidden;
+}
+
+#hatTalk {
+  position: absolute;
+    top: -200px;
+    left: 220px;
+    width: calc(6000px / 10);
+    height:  600px;
+    z-index: 1;
+    background-image: url('../assets/hatspritesheet2.png');
+
+    visibility: hidden;
+
+}
+
+.hatTalk {
+  animation: hatTalk 7.5s steps(10) infinite;
+}
+@keyframes hatTalk
+{
+  0% {
+    visibility: visible;
+  }
+  100%{
+    background-position: -6000px;
+
+  }
+}
+
+.dumbledoreTalk {
+  animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.snapeTalk {
+  animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.crowdShake {
+  animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  0% {
+    visibility: visible;
+  }
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+/* #bg {
+
+  background-image: url('../assets/bg.jpg');
+  display:block;
+  margin:auto;
+  width:1000px;
+}
+
+.title {
+  background-image: ();
+}
+
+a {
+  font-size: 50px;
+  margin:auto;
+}
+
+#startBtn {
+  width:200px;
+  height:100px;
+  margin:auto;
+  display:block;
+  color: white;
+  font-size: 50px;
+  background-color: blue;
+}
+
+
+
+#animationFrame .title {
+  opacity:0;
+}
+
+.newbg {
+  background-image: url('../assets/newbg.jpg');
+}
+
+
+.drop {
+
+  background-image: url('../assets/scene1.png');
+  animation: drop 2s steps(5);
+}
+
+.idea {
+  height:500px;
+  width:468px;
+  background-image: url('../assets/scene2.png');
+  animation: idea 2s steps(3);
+}
+
+@keyframes idea {
+  100%
+  {  background-position: -1350px;
+  }
+}
+
+
+
+
+
+@keyframes drop {
+  100%
+  {  background-position: -2550px;
+  }
+}
+
+.blowup {
+  background-image: url('../assets/scene3.png');
+  animation: blowup 4s steps(8);
+}
+
+@keyframes blowup {
+  100%
+  {  background-position: -4082px;
+  }
+
+}
+
+.podium {
+  background-image: url('../assets/scene4.png');
+  animation: podium 3s steps(4);
+}
+
+@keyframes podium {
+  100%
+  {  background-position: -2000px;
+  }
+
+}
+
+.pop {
+  background-image: url('../assets/popped.png');
+  animation: pop 2s steps(2);
+}
+
+@keyframes pop {
+  100% {
+    background-position: -950px;
+  }
+}
+
+*/

@@ -1,0 +1,156 @@
+/* Space */
+
+[class|=space] {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.space-10 {
+    height: 10px;
+}
+
+.space-20 {
+    height: 20px;
+}
+
+.space-30 {
+    height: 30px;
+}
+
+.space-40 {
+    height: 40px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.space-60 {
+    height: 60px;
+}
+
+.space-70 {
+    height: 70px;
+}
+
+.space-80 {
+    height: 80px;
+}
+
+.space-90 {
+    height: 90px;
+}
+
+.space-100 {
+    height: 100px;
+}
+
+
+
+    /* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home-area {
+        padding: 100px 0;
+        margin-bottom: 0;
+    }
+    .mainmenu-area ul.nav.navbar-nav li a {
+        margin: 0 10px;
+    }
+    .progress-area {
+        background-image: none;
+    }
+    .mobile-image {
+        display: none !important;
+    }
+    .feature-area,
+    .progress-area {
+        background-image: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .footer-bottom .footer-menu ul,
+    .footer-area {
+        text-align: center;
+    }
+    .angle:after {
+        height: 80px;
+    }
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .bttn-white {
+        padding: 8px 30px;
+    }
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .angle:after {
+        height: 60px;
+    }
+
+
+
+    /* Menu */
+    .mainmenu-area {
+        padding: 15px 0;
+    }
+    .mainmenu-area .navbar-toggle {
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+        height: 2px;
+        border-radius: 0;
+    }
+    .mainmenu-area #primary_menu {
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li {
+        display: block;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li a {
+        padding: 15px;
+        border: none;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li.active a,
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li a:hover {
+        background-color: #ffffff;
+        color: #5e88fc;
+    }
+
+
+
+    /* Home */
+    .home-area {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        margin-bottom: 0;
+    }
+    .mobile-image {
+        display: none !important;
+    }
+    .footer-bottom .footer-menu ul,
+    .footer-area {
+        text-align: center;
+    }
+
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {}

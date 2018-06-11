@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: bold 14px Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size: cover;
+}
+
+.calculator {
+    background-color: blue;
+    height: auto;
+    width: 304px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    padding: 20px 20px 9px;
+    background: #403D39;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2), 0px 10px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.sideButtons {
+    background: #f4aecb;
+    box-shadow: 0px 4px #df86ac;
+    color: #a04e71;
+}
+
+.sideButtons:hover {
+    background: #ef96bb;
+    box-shadow: 0px 4px #d56d99;
+    color: white;
+}
+
+.sideButtons:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+.numbers {
+    background: white;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    color: #888;
+}
+
+.numbers:hover {
+    background: #6f8fa2;
+    box-shadow: 0px 4px #28536c;
+    color: white;
+}
+
+.numbers:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+.equal {
+    background: #f1ff92;
+    box-shadow: 0px 4px #9da853;
+    color: #888e5f;
+}
+
+.equal:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: #ffffff;
+}
+
+.equal:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+input[type=button],
+[type=reset] {
+    width: 66px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    margin: 0 7px 11px 0;
+
+}
+
+.answer {
+    height: 36px;
+    width: 200px;
+    float: right;
+    padding-left: 27px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+    border: none;
+
+}
+
+#cButton {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+}
+
+#cButton:hover {
+    background: #f68991;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+}
+
+#cButton:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}

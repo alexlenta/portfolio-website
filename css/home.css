@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.title-container {
+  min-width: 300px;
+  flex-basis: 55%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.profile-img-container {
+  min-width: 300px;
+  margin: 0 20px;
+  flex-basis: 40%;
+}
+
+.profile-img-container img {
+  width: 100%;
+}
+
+.social-link {
+  margin: 0 6px;
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 38px;
+    margin-bottom: 18px;
+  }
+
+  .profile-img-container {
+    flex-basis: 60vw;
+  }
+}
